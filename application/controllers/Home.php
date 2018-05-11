@@ -7,7 +7,6 @@ class Home extends CI_Controller
 
     function index()
     {
-	echo 'Tets';
 	$this->load->model('Catalog/Home_model');
 	$this->data['posts'] = $this->Home_model->get_posts();
 	$this->load->view('catalog/theme/header', $this->data);
