@@ -1,0 +1,28 @@
+# Created by https://www.gitignore.io/api/netbeans
+
+### NetBeans ###
+nbproject/private/
+build/
+nbbuild/
+nbdist/
+.nb-gradle/
+nbactions.xml
+database.php
+
+cv/
+.DS_Store
+
+*/config/development
+*/logs/log-*.php
+!*/logs/index.html
+*/cache/*
+!*/cache/index.html
+!*/cache/.htaccess
+
+#codeigniter 3
+application/logs/*
+!application/logs/index.html
+!application/logs/.htaccess
+
+
+# End of https://www.gitignore.io/api/netbeans
