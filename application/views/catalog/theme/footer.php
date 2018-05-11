@@ -40,7 +40,7 @@
 <script src="/application/views/catalog/theme/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
 
 <!-- Custom scripts for this template -->
-<script src="/application/views/catalog/theme/js/clean-blog.min.js"></script>  
+<script src="/application/views/catalog/theme/js/clean-blog.min.js"></script>
 
 </body>
 
