@@ -21,17 +21,13 @@ class Category_model extends CI_Model
 	$this->db->trans_start();
 	$data_set = array(
 	    'title'		 => $this->input->post("title"),
-	    'link'		 => $this->input->post("link"),
-	    'content'	 => $this->input->post("content"),
-	    'tag'		 => $this->input->post("tag"),
-	    'write_date'	 => date("Y-m-d", strtotime($this->input->post("write_date"))),
+	    'seo_title'	 => $this->input->post("seo_title"),
+	    'update_time'	 => date("Y-m-d H:i:s"),
 	    'order'		 => $this->input->post("order"),
-	    'status'	 => $this->input->post("status"),
-	    'author'	 => $this->input->post("author"),
-	    'category_id'	 => $this->input->post("category_id")
+	    'status'	 => $this->input->post("status")
 	);
-	$this->db->where('post_id', $category_id);
-	$this->db->update('tbl_posts', $data_set);
+	$this->db->where('category_id', $category_id);
+	$this->db->update('tbl_categories', $data_set);
 	$this->db->trans_complete();
 	if ($this->db->trans_status() === FALSE)
 	{
@@ -50,9 +46,8 @@ class Category_model extends CI_Model
 	$data_set = array(
 	    'title'		 => $this->input->post("title"),
 	    'seo_title'	 => $this->input->post("seo_title"),
-	    'update_time'	 => date("Y-m-d", strtotime($this->input->post("write_date"))),
 	    'order'		 => $this->input->post("order"),
-	    'status'	 => $this->input->post("status"),
+	    'status'	 => $this->input->post("status")
 	);
 	$this->db->insert('tbl_categories', $data_set);
 	$this->db->trans_complete();

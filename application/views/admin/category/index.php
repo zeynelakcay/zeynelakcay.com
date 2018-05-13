@@ -29,9 +29,24 @@
 			    foreach ($categories as $category)
 			    {
 				?>
-    			    <tr class="odd gradeX">  
+    			    <tr class="odd gradeX">
     				<td><?php echo $category['title']; ?></td>
-    				<td class="center"><?php echo $category['status']; ?></td>
+    				<td class="center">
+					<?php
+					if ($category['status'] == 1)
+					{
+					    ?>
+					    <span class="btn-success">Aktif</span>
+					    <?php
+					}
+					else
+					{
+					    ?>
+					    <span class="btn-danger">Pasif</span>
+					    <?php
+					}
+					?>
+    				</td>
     				<td class="center">
     				    <a href="/Admin/Category/edit/<?php echo $category['category_id']; ?>" class="btn btn-outline btn-info">Güncelle</a>
     				    <a href="" class="btn btn-outline btn-danger">Sil</a>
