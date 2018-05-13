@@ -13,7 +13,7 @@
 			</a>
 		    </li>
 		    <li class="list-inline-item">
-			<a href="#">
+			<a href="https://www.linkedin.com/in/zeynel-ak%C3%A7ay-8b696083/">
 			    <span class="fa-stack fa-lg">
 				<i class="fa fa-circle fa-stack-2x"></i>
 				<i class="fa fa-linkedin fa-stack-1x fa-inverse"></i>
@@ -21,7 +21,7 @@
 			</a>
 		    </li>
 		    <li class="list-inline-item">
-			<a href="#">
+			<a href="https://twitter.com/zeynel_akcay">
 			    <span class="fa-stack fa-lg">
 				<i class="fa fa-circle fa-stack-2x"></i>
 				<i class="fa fa-twitter fa-stack-1x fa-inverse"></i>
@@ -29,7 +29,7 @@
 			</a>
 		    </li>
 		    <li class="list-inline-item">
-			<a href="#">
+			<a href="https://www.instagram.com/zeynelakcay/">
 			    <span class="fa-stack fa-lg">
 				<i class="fa fa-circle fa-stack-2x"></i>
 				<i class="fa fa-instagram fa-stack-1x fa-inverse"></i>
@@ -37,7 +37,7 @@
 			</a>
 		    </li>
 		    <li class="list-inline-item">
-			<a href="#">
+			<a href="https://www.facebook.com/zeynelakcay61">
 			    <span class="fa-stack fa-lg">
 				<i class="fa fa-circle fa-stack-2x"></i>
 				<i class="fa fa-facebook fa-stack-1x fa-inverse"></i>
@@ -45,7 +45,7 @@
 			</a>
 		    </li>
 		</ul>
-		<p class="copyright text-muted">Copyright &copy; Zeynel Akçay 2018 (Ona Her Yer Trabzon)</p>
+		<p class="copyright text-muted">Copyright &copy; Zeynel Akçay 2018 Trabzon'da <a href="https://github.com/zeynelakcay/zeynelakcay.com" target="_blank">Open Source</a> Olarak geliştirildi.</p>
 	    </div>
         </div>
     </div>
