@@ -71,7 +71,7 @@
 		    </li>
 		    <li class="divider"></li>
 		    <li><a href="login.html"><i class="fa fa-sign-out fa-fw"></i>Güvenli Çıkış</a>
-		    </li>  
+		    </li>
 		</ul>
 		<!-- /.dropdown-user -->
 	    </li>
@@ -87,7 +87,7 @@
 			<a href="/Admin/Dashboard"><i class="fa fa-dashboard fa-fw"></i> Dashboard</a>
 		    </li>
 		    <li>
-			<a href="#"><i class="fa fa-wrench fa-fw"></i> Kategoriler </a>
+			<a href="/Admin/Category"><i class="fa fa-wrench fa-fw"></i> Kategoriler</a>
 		    </li>
 		    <li>
 			<a href="/Admin/Post"><i class="fa fa-edit fa-fw"></i> İçerikler</a>
