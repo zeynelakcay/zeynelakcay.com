@@ -52,6 +52,7 @@ class Post extends AD_Controller
 		}
 	    }
 	}
+	$this->data['categories'] = $this->Post_model->get_categories();
 	$this->load->view('admin/theme/header', $this->data);
 	$this->load->view('admin/post/add', $this->data);
 	$this->load->view('admin/theme/footer', $this->data);
@@ -91,7 +92,8 @@ class Post extends AD_Controller
 		}
 	    }
 	}
-	$this->data['post'] = $this->Post_model->getPost($id);
+	$this->data['categories']	 = $this->Post_model->get_categories();
+	$this->data['post']		 = $this->Post_model->getPost($id);
 	$this->load->view('admin/theme/header', $this->data);
 	$this->load->view('admin/post/edit', $this->data);
 	$this->load->view('admin/theme/footer', $this->data);

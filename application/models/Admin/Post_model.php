@@ -70,6 +70,12 @@ class Post_model extends CI_Model
 	}
     }
 
+    public function get_categories()
+    {
+	$query = $this->db->query("SELECT tc.* FROM tbl_categories tc WHERE tc.status = 1");
+	return $query->result_array();
+    }
+
     public function delete_post($id)
     {
 	$this->db->query('SET TRANSACTION ISOLATION LEVEL READ COMMITTED');

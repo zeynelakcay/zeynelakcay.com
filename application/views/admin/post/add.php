@@ -69,7 +69,7 @@
 				    <label>Durumu</label>
 				    <select name="status" class="form-control">
 					<option selected value="1">Aktif</option>
-					<option value="0">Pasif</option>  
+					<option value="0">Pasif</option>
 				    </select>
 				</div>
 				<div class="col-lg-3">
@@ -93,8 +93,12 @@
 				<div class="col-lg-6">
 				    <label>Kategori</label>
 				    <select name="category_id" class="form-control">
-					<option value="0"> PHP</option>
-					<option value="1"> Genel</option>
+					<?php
+					foreach ($categories as $category)
+					{
+					    ?>
+    					<option value="<?php echo $category['category_id']; ?>"><?php echo $category['title']; ?></option>
+					<?php } ?>  
 				    </select>
 				</div>
 			    </div>

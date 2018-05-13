@@ -3,12 +3,10 @@
 	<div class="col-lg-12">
 	    <h1 class="page-header">Yeni Post Ekle</h1>
 	</div>
-	<!-- /.col-lg-12 -->
     </div>
     <style>
 	.form-group{overflow: hidden}
     </style>
-    <!-- /.row -->
     <div class="row">
 	<div class="col-lg-12">
 	    <div class="panel panel-default">
@@ -100,8 +98,17 @@
 				<div class="col-lg-6">
 				    <label>Kategori</label>
 				    <select name="category_id" class="form-control">
-					<option value="0"> PHP</option>
-					<option value="1"> Genel</option>
+					<?php
+					foreach ($categories as $category)
+					{
+					    ?>
+    					<option <?php
+					    if ($post['category_id'] == $category['category_id'])
+					    {
+						echo 'selected';
+					    }
+					    ?> value="<?php echo $category['category_id']; ?>"> <?php echo $category['title']; ?></option>
+<?php } ?>
 				    </select>
 				</div>
 			    </div>
