@@ -8,7 +8,7 @@
 	<meta name="description" content="">
 	<meta name="author" content="">
 
-    <title>Zeynel Akçay Kişisel Blog </title>
+    <title>Zeynel Akçay - Kişisel Blog - Bilgisayar Mühendisi</title>
 
     <!-- Bootstrap core CSS -->
     <link href="/application/views/catalog/theme/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet"/>
@@ -22,7 +22,7 @@
     <link href="/application/views/catalog/theme/css/clean-blog.min.css" rel="stylesheet"/>
     <link rel="stylesheet" href="/application/views/ckeditor/plugins/codesnippet/lib/highlight/styles/monokai.css"/>
 
-    <script src="/application/views/ckeditor/plugins/codesnippet/lib/highlight/highlight.pack.js" type="text/javascript"></script>  
+    <script src="/application/views/ckeditor/plugins/codesnippet/lib/highlight/highlight.pack.js" type="text/javascript"></script>
     <script>hljs.initHighlightingOnLoad();</script>
 </head>
 
