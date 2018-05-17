@@ -26,7 +26,7 @@
     		<p class="post-meta">Yazar
     		    <a href="#"><?php echo $post['author']; ?></a>
     		    Tarih <?php echo $post['write_date']; ?></p>
-    		<a href="/<?php echo $post['link'] . "-" . $post['post_id']; ?>">
+    		<a href="/blog/<?php echo $post['link'] . "-" . $post['post_id']; ?>">
     		    <h2 class="post-title">
 			    <?php echo $post['title']; ?>
     		    </h2>

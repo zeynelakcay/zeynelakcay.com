@@ -58,7 +58,7 @@ $route['admin'] = 'Admin/Login';
 
 $route['iletisim']	 = 'Catalog/Contact';
 $route['hakkimda']	 = 'Catalog/About';
-$route[':any']		 = 'Catalog/Post/detail';
+$route['blog/(:any)']	 = 'Catalog/Post/detail';
 
 
 
