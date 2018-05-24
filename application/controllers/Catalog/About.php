@@ -5,7 +5,7 @@ class About extends CI_Controller
 
     public function index()
     {
-
+	$this->load->model('Admin/About_model');
 
 	$url = 'https://api.instagram.com/v1/users/1384041035/media/recent/?access_token=1384041035.5df03f2.2040d0de7ad54369bc3f6018b3228554';
 
@@ -28,8 +28,8 @@ class About extends CI_Controller
 	    }
 	}
 
-	$this->data['instagram_images'] = $images;
-
+	$this->data['instagram_images']	 = $images;
+	$this->data['about']		 = $this->About_model->get_about();
 	$this->load->view('catalog/theme/header', $this->data);
 	$this->load->view('catalog/about/index', $this->data);
 	$this->load->view('catalog/theme/footer', $this->data);

@@ -17,7 +17,7 @@
 <div class="container">
     <div class="row">
         <div class="col-lg-8 col-md-10 mx-auto">
-	    <p>Evet kim bu uşak, hemen cevaplayayım bu soruyu, Zeynel Akçay Trabzon Doğumludur. Devamı gelecek ...</p>
+	    <p><?php echo $about['about']; ?></p>  
         </div>
     </div>
     <div class="row">
@@ -27,7 +27,7 @@
 	    ?>
     	<div class="col-lg-2 col-md-6">
     	    <img  src="<?php echo $instagram_image['src']; ?>" class="figure-img img-fluid rounded" alt="">
-    	</div>  
+    	</div>
 	<?php } ?>
     </div>
 </div>
