@@ -93,6 +93,9 @@
 			<a href="/Admin/Post"><i class="fa fa-edit fa-fw"></i> İçerikler</a>
 		    </li>
 		    <li>
+			<a href="/Admin/About"><i class="fa fa-edit fa-fw"></i> Hakkımda</a>
+		    </li>
+		    <li>  
 			<a href="#"><i class="fa fa-wrench fa-fw"></i> Ayarlar </span></a>
 		    </li>
 		</ul>
