@@ -25,11 +25,9 @@
 	foreach ($instagram_images as $instagram_image)
 	{
 	    ?>
-    	<div class="col-lg-4 col-md-10 mx-auto">
-    	    <figure class="figure">
-    		<img height="300px" src="<?php echo $instagram_image['src']; ?>" class="figure-img img-fluid rounded" alt="">
-    	    </figure>
-    	</div>
+    	<div class="col-lg-2 col-md-6">
+    	    <img  src="<?php echo $instagram_image['src']; ?>" class="figure-img img-fluid rounded" alt="">
+    	</div>  
 	<?php } ?>
     </div>
 </div>

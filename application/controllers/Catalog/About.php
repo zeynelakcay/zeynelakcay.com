@@ -19,7 +19,7 @@ class About extends CI_Controller
 	    {
 
 		$title	 = (isset($item->caption)) ? mb_substr($item->caption->text, 0, 70, "utf8") : null;
-		$src	 = $item->images->standard_resolution->url;
+		$src	 = $item->images->thumbnail->url;
 
 		$images[] = array(
 		    "title"	 => htmlspecialchars($title),

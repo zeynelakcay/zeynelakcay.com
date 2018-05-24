@@ -15,4 +15,22 @@ class Post_model extends CI_Model
 	return $query->row_array();
     }
 
+    public function post_read_count($count)
+    {
+	$this->db->query('SET TRANSACTION ISOLATION LEVEL READ COMMITTED');
+	$this->db->trans_start();
+	$data_set = array(
+	    'count' => $count,
+	);
+	$this->db->where('post_read_count_id', 1);
+	$this->db->update('tbl_post_read_count', $data_set);
+	$this->db->trans_complete();
+    }
+
+    public function get_post_read_count()
+    {
+	$query = $this->db->query("SELECT tprc.* FROM tbl_post_read_count tprc ");
+	return $query->row_array();
+    }
+
 }
