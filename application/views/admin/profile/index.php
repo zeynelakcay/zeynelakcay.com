@@ -1,7 +1,7 @@
 <div id="page-wrapper">
     <div class="row">
 	<div class="col-lg-12">
-	    <h1 class="page-header">Hakkımda</h1>
+	    <h1 class="page-header">Profil Güncelle</h1>
 	</div>
 	<!-- /.col-lg-12 -->
     </div>
@@ -13,7 +13,7 @@
 	<div class="col-lg-12">
 	    <div class="panel panel-default">
 		<div class="panel-heading">
-		    Hakkımda
+		    <span class="btn-danger">Profil Güncelle</span>
 		</div>
 		<div class="panel-body">
 		    <?php
@@ -45,24 +45,37 @@
 		    <?php } ?>
 
 		    <div class="row">
-			<form role="form" method="post" action="/Admin/About/index">
+			<form role="form" method="post" action="<?php echo base_url(); ?>Admin/Profile/index/<?php echo $user['user_id']; ?>">
 			    <div class="form-group">
-				<div class="col-lg-12">
-				    <label>Hakkımda</label>
-				    <textarea name="about" class="form-control" id="about_content" rows="3"><?php echo $about['about']; ?>
-
-				    </textarea>
+				<div class="col-lg-4">
+				    <label>İsim</label>
+				    <input type="text" name="name" value="<?php echo $user['name']; ?>"  class="form-control">
+				</div>
+				<div class="col-lg-4">
+				    <label>İsim</label>
+				    <input type="text" name="surname" value="<?php echo $user['surname']; ?>"  class="form-control">
+				</div>
+				<div class="col-lg-4">
+				    <label>Tel</label>
+				    <input type="text" name="phone" value="<?php echo $user['phone']; ?>" class="form-control">
 				</div>
 			    </div>
-
-
+			    <div class="form-group">
+				<div class="col-lg-4">
+				    <label>E-mail</label>
+				    <input type="email" name="email" value="<?php echo $user['email']; ?>"  class="form-control">
+				</div>
+				<div class="col-lg-4">
+				    <label>Şifre</label>
+				    <input type="text" name="password" value="<?php echo $user['password']; ?>" class="form-control">
+				</div>  
+			    </div>
 			    <div class="form-group">
 				<div class="col-lg-12">
-				    <button type="submit" class="btn btn-default">Kayıt Et</button>
+				    <button type="submit" class="btn btn-default">Güncelle</button>
 				    <button type="reset" class="btn btn-default">Temizle</button>
 				</div>
 			    </div>
-
 			</form>
 			<!-- /.col-lg-6 (nested) -->
 		    </div>
@@ -77,17 +90,3 @@
     <!-- /.row -->
 </div>
 <!-- /#page-wrapper -->
-
-<script src="/application/views/ckeditor/ckeditor.js"></script>
-<script>
-    CKEDITOR.replace('about_content', {
-	filebrowserBrowseUrl: '/application/views/ckfinder/ckfinder.html',
-	filebrowserImageBrowseUrl: '/application/views/ckfinder/ckfinder.html?type=Images',
-	filebrowserFlashBrowseUrl: '/application/views/ckfinder/ckfinder.html?type=Flash',
-	filebrowserUploadUrl: '/application/views/ckfinder/core/connector/php/connector.php?command=QuickUpload&type=Files',
-	filebrowserImageUploadUrl: '/application/views/ckfinder/core/connector/php/connector.php?command=QuickUpload&type=Images',
-	filebrowserFlashUploadUrl: '/application/views/ckfinder/core/connector/php/connector.php?command=QuickUpload&type=Flash',
-	extraPlugins: 'codesnippet',
-	codeSnippet_theme: 'monokai_sublime'
-    });
-</script>

@@ -95,8 +95,8 @@
 		    <li>
 			<a href="/Admin/About"><i class="fa fa-edit fa-fw"></i> Hakkımda</a>
 		    </li>
-		    <li>  
-			<a href="#"><i class="fa fa-wrench fa-fw"></i> Ayarlar </span></a>
+		    <li>
+			<a href="/Admin/Profile"><i class="fa fa-wrench fa-fw"></i> Ayarlar </span></a>
 		    </li>
 		</ul>
 	    </div>

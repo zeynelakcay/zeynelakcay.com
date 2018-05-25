@@ -6,7 +6,14 @@ class About extends CI_Controller
     public function index()
     {
 	$this->load->model('Admin/About_model');
+	$this->load->model('Catalog/Post_model');
 
+	if (isset($_GET['utm_source']) == 'ins')
+	{
+	    $post_read_count = $this->Post_model->get_post_read_count();
+	    $new_count	 = $post_read_count['count'] + 1;
+	    $this->Post_model->post_read_count($new_count);
+	}
 	$url = 'https://api.instagram.com/v1/users/1384041035/media/recent/?access_token=1384041035.5df03f2.2040d0de7ad54369bc3f6018b3228554';
 
 	$response = $this->get_curl($url); //change request path to pull different photos
