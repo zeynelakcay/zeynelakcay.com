@@ -59,6 +59,11 @@ $route['admin'] = 'Admin/Login';
 $route['iletisim']	 = 'Catalog/Contact';
 $route['hakkimda']	 = 'Catalog/About';
 $route['blog/(:any)']	 = 'Catalog/Post/detail';
-
-
-
+/*
+| -------------------------------------------------------------------------
+| Sample REST API Routes
+| -------------------------------------------------------------------------
+*/
+$route['api/post/articles'] = 'Api/Post/articles';
+$route['api/post/article/(:num)'] = 'Api/Post/article/id/$1';
+$route['api/post/articles/(:num)(\.)([a-zA-Z0-9_-]+)(.*)'] = 'Api/Post/Articles/id/$1/format/$3$4'; // Example 8
