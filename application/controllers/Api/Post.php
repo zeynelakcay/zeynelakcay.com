@@ -31,7 +31,7 @@ class Post extends REST_Controller {
         $this->methods['articles_get']['limit'] = 500; // 500 requests per hour per user/key
         $this->methods['articles_post']['limit'] = 100; // 100 requests per hour per user/key
         $this->methods['articles_delete']['limit'] = 50; // 50 requests per hour per user/key
-        $this->load->model('Admin/Post_model');
+        $this->load->model('Catalog/Post_model');
     }
 
     public function article_get()
@@ -61,7 +61,7 @@ class Post extends REST_Controller {
 
     public function articles_get()
     {
-        $articles = $this->Post_model->getPosts();
+        $articles = $this->Post_model->get_posts();
 
         if ($articles)
         {
